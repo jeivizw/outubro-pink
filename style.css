@@ -1,0 +1,127 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7d3e6;
+            color: white;
+            overflow-x: hidden; 
+            position: relative;
+        }
+
+        
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        
+        .nav-menu {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            list-style: none;
+            text-align: left;
+        }
+
+        .nav-menu li {
+            margin-bottom: 5px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+       
+        .date-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 180px;
+        }
+
+        .date-box p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #3f3f3f;
+        }
+
+        .date-box .infinity-symbol {
+            width: 80px; 
+            height: auto;
+            margin-top: 10px;
+        }
+
+
+        .small-ribbon {
+            position: absolute;
+            top: 80px;
+            right: 210px; 
+            width: 120px;
+        }
+
+
+
+        .main-ribbon {
+            width: 230px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-family: 'Fredoka One', cursive;
+            font-size: 4rem;
+            text-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+
+        .slogan {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .more-info {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 25px 40px;
+            margin-top: 50px;
+        }
+
+        .more-info p {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .more-info .arrow {
+            margin-top: 10px;
+            font-size: 2rem;
+        }
+
+        .background-ribbon {
+            position: absolute;
+            right: -100px;
+            bottom: -50px;
+            width: 500px;
+            opacity: 0.15;
+            z-index: 1;
+            transform: rotate(-15deg);
+        }
