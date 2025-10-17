@@ -129,10 +129,8 @@
             scroll-behavior: smooth;
         }
 
-       
-
         .tela-cheia {
-            height: 100vh; /* Ocupa 100% da altura da tela */
+            height: 100vh; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -141,7 +139,6 @@
             box-sizing: border-box;
         }
 
-        /* Estilos da primeira seção */
         #inicio .conteudo-central {
             text-align: center;
         }
@@ -176,7 +173,6 @@
             font-size: 1.5rem;
         }
 
-        /* Animação para os elementos da segunda seção */
         #informacoes .animar {
             opacity: 0;
             transform: translateY(30px);
@@ -187,3 +183,43 @@
             opacity: 1;
             transform: translateY(0);
         }
+                .menu-lateral {
+            position: fixed; 
+            top: 40px;
+            left: 40px;
+            z-index: 1000; 
+        }
+
+        .menu-lateral h3,
+        .menu-lateral a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: block; 
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .menu-lateral a:hover {
+            transform: translateX(10px); 
+        }
+
+        .menu-lateral h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        .conteudo-informacoes {
+             text-align: center;
+            max-width: 750px;
+        }
+
+        .linha {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 45rem;
+            position: relative;
+        }
+       
