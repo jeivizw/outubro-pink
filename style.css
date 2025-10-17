@@ -125,3 +125,65 @@
             z-index: 1;
             transform: rotate(-15deg);
         }
+                html {
+            scroll-behavior: smooth;
+        }
+
+       
+
+        .tela-cheia {
+            height: 100vh; /* Ocupa 100% da altura da tela */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        /* Estilos da primeira seção */
+        #inicio .conteudo-central {
+            text-align: center;
+        }
+
+        #inicio .laco-principal {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+
+        #inicio h1 {
+            font-size: 3.5rem;
+            color: #E55A93;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+        }
+
+        .btn-desca {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 20px 40px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            text-decoration: none;
+            color: #E55A93;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .btn-desca span {
+            display: block;
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+
+        /* Animação para os elementos da segunda seção */
+        #informacoes .animar {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        #informacoes .animar.visivel {
+            opacity: 1;
+            transform: translateY(0);
+        }
