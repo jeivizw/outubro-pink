@@ -1,19 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+
     const observer = new IntersectionObserver((entries) => {
+
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                
+
                 entry.target.querySelectorAll('.animar').forEach(el => {
+
                     el.classList.add('visivel');
                 });
             }
         });
     }, {
-        threshold: 0.1 
+        threshold: 0.15
     });
 
-    const secaoInformacoes = document.querySelector('#informacoes');
-    if (secaoInformacoes) {
-        observer.observe(secaoInformacoes);
-    }
+    const sectionsToAnimate = document.querySelectorAll('#o-que-e, #importancia');
+    sectionsToAnimate.forEach(section => {
+        observer.observe(section);
+    });
+
 });
